@@ -10,7 +10,10 @@ def endpoint(event, context):
 
     response = {
         "statusCode": 200,
-        "body": body.stdout.decode('ascii')
+        "body": body.stdout.decode('ascii'),
+        "headers": {
+            'Content-Type': 'text/plain',
+        },
     }
 
     return response
