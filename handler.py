@@ -13,6 +13,8 @@ def endpoint(event, context):
         "body": body.stdout.decode('ascii'),
         "headers": {
             'Content-Type': 'text/plain',
+            'Access-Control-Allow-Origin': '*',
+            'Cache-Control': 'max-age=31536000',
         },
     }
 
