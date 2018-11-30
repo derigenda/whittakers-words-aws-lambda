@@ -14,7 +14,7 @@ def endpoint(event, context):
         "headers": {
             'Content-Type': 'text/plain',
             'Access-Control-Allow-Origin': '*',
-            'Cache-Control': 'max-age=31536000',
+            'Cache-Control': 'max-age=31536000, immutable',
         },
     }
 
